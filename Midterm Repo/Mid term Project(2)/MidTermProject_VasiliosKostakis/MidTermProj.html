@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Class Compendium</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Boogaloo|Open+Sans:300,400|Oswald:700">
+	<link rel="stylesheet" href="css/main2.css">
+	<link rel="stylesheet" href="css/main1.css">
+	<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+
+
+<div class="content-wrapper">
+		<img src="img/bdologo@2x.png" class="logo" alt="NAPS Logo">
+		<nav>
+			<ul>
+				<li><a href="video.html">Dueling</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<div class="hero">
+	<h1>Black Desert online Class Compendium</h1>
+	<p>Learn small but important facts about the classes of bdo.</p>
+</div>
+
+<main role="main">
+	<div class="content-wrapper">
+		<p id="press-quote">APES STRONG TOGETHER!!!!! OOK OOK!!!!!!. — TheOnyxAce(my friend)</p>
+		<p>Black desert online has a multitude of classes.  This is just a small compendium of available classes and all of their strengths and weaknesses.  Each class in bdo has a specific role when it comes to large guild fights (i.e. 100 man guild vs 100 man guild) and it is imperative that each class
+			does their duty when in the fight, otherwise you could lose the battle.
+			  <a href="#">contact&nbsp;us</a>.</p>
+		<h2>Player vs. Player Combat</h2>
+		<figure>
+			<img src="img/vantheos@2x.jpg" alt="Vantheos">
+			<figcaption>The seasons match the same as real life</figcaption>
+		</figure>
+		<p>Guilds in Black Desert online can fight for the actual land that everyone plays on.  Every saturday there is siege warfare from 9pm eastern to 12am eastern.  Multiple guilds can place on the same territory, and each guild can bring up to 100 people.  Sieges can get insane with the number of people on the node,
+		some guilds form alliances until they are the last ones standing and then fight to the end and the last guild standing is the winner of the territory.  After siege there a siege podcast between all the guilds that fought on all 5 territories and then they discuss and laugh about everything that happened.  Sometimes
+	there is some bitterness between them, and a fight erupts.  All part of the game. </p>
+	</div>
+</main>
+
+<div class="outer-wrapper">
+	<header class="clearfix">
+		<h1>Class Facts</h1>
+		<select id="class-list">
+			<option value="usa">Choose a class</option>
+			<option value="war">Warrior</option>
+			<option value="valk">Valkyrie</option>
+			<option value="zerk">Berserker</option>
+			<option value="sorc">Sorceress</option>
+			<option value="rang">Ranger</option>
+			<option value="wiz">Wizard</option>
+			<option value="witch">Witch</option>
+			<option value="nin">Ninja</option>
+			<option value="kuno">Kunoichi</option>
+			<option value="musa">Musa</option>
+			<option value="mae">Maewha</option>
+		</select>
+	</header>
+
+	<div class="main clearfix">
+		<div class="img-holder">
+			<div>
+				<img id="info-pic" src= alt="United States of America" width="240" height="240">
+				<p id="info-name"></p>
+			</div>
+		</div>
+		<div class="info-holder">
+			<p><strong>Class: </strong><span id="info-class">N/A</span></p>
+			<p><strong>Main Weapon: </strong><span id="info-mainw">N/A</span></p>
+			<p><strong>Awakening Weapon: </strong><span id="info-awakew">N/A</span></p>
+			<p><strong>Attack Type: </strong><span id="info-attackt">N/A</span></p>
+			<p><strong>Strengths: </strong><span id="info-strengths">N/A</span></p>
+			<p><strong>Weaknesses: </strong><span id="info-weaknesses">N/A</span></p>
+
+		</div>
+	</div>
+</div>
+<div class="outer-wrapper">
+	<div class="content-wrapper">
+		<header>
+			<h1>Postcard Generator</h1>
+			<p class="subtitle">Generate Postcards from Major Cities in BDO</p>
+		</header>
+		<main role="main">
+			<div class="first step">
+				<h2>1. Choose a Major City</h2>
+				<select name="cities" id="cities">
+					<option selected disabled value="empty-city">Major Cities of Black Desert Online</option>
+					<option value="ve">Velia</option>
+					<option value="he">Heidel</option>
+					<option value="ca">Calpheon</option>
+					<option value="al">Altinova</option>
+					<option value="va">Valenica</option>
+
+				</select>
+			</div>
+			<div class="second step">
+				<h2>2. Enjoy Your Postcard!</h2>
+				<div id="postcard">
+					<p id="greeting">To Generate a Postcard</p>
+					<p id="state-heading">Choose a city</p>
+				</div>
+			</div>
+		</main>
+	</div>
+</div>
+<script src="js/class-data1.js"></script>
+<script>
+	document.getElementById('class-list').onchange = function() {
+		var selected = this.value;
+		document.getElementById('info-pic').src= 'img1/'+selected+'.png';
+		document.getElementById('info-class').textContent = stateData[this.value].class;
+		document.getElementById('info-mainw').textContent = stateData[this.value].mainw;
+		document.getElementById('info-awakew').textContent = stateData[this.value].awakew;
+		document.getElementById('info-attackt').textContent = stateData[this.value].attackt;
+		document.getElementById('info-strengths').textContent = stateData[this.value].strengths;
+		document.getElementById('info-weaknesses').textContent = stateData[this.value].weaknesses;
+
+	};
+</script>
+<footer>
+	<p>Copyright © I do not own any rights lol</p>
+</footer>
+
+<script>
+	var quotesArray = [
+		'APES STRONG TOGETHER!!!!!! OOK OOK!!!!!!!!!. — TheOnyxAce',
+		'Warriors need a buff reeeeeeeeeeee. — Vantheos',
+		'DONT BUILD ON MEDIAH. — Bekill',
+		'WHERES MY MONEYYYYYYYYY. — Bekill',
+		'BIG DAMAGE ON PING!!!!!!!!!!. — Lacari',
+		'NEWS FLASH TIM ALLEN. — Bjear',
+		'40 mil an hour at bashums. — Multiscuff'
+	];
+	var randomNumber = Math.floor(Math.random()*quotesArray.length);
+	document.getElementById('press-quote').textContent = '“' + quotesArray[randomNumber].split(' — ')[0] + '” — ' + quotesArray[randomNumber].split(' — ')[1];
+	//console.log( 	quotesArray[randomNumber].split(' — ')[0] );
+</script>
+
+<footer>
+	<p>Made in NY <br>Copyright © BDO Class Compendium</p>
+</footer>
+
+<script>
+	var states = document.getElementById('cities');
+
+	states.onchange = function() {
+		// console.log('state index: ' + states.selectedIndex);
+		// console.log('state name: ' + states.options[states.selectedIndex].text);
+		// console.log('img/' + states.value + '@2x.jpg');
+		document.getElementById('postcard').style.backgroundImage = 'url(img/' + cities.value + '@2x.jpg)';
+		document.getElementById('greeting').innerHTML = 'Greetings from';
+		document.getElementById('state-heading').innerHTML = cities.options[cities.selectedIndex].text;
+	}
+</script>
+
+</body>
+</html>
